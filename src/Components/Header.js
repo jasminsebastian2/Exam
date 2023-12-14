@@ -3,7 +3,7 @@ import { MenuAlt1Icon, XIcon } from '@heroicons/react/outline';
 
 const Header = ({ onRegionChange }) => {
   const [burger, setBurger] = useState(false);
-  const [selectedRegion, setSelectedRegion] = useState('All'); 
+  const [selectedRegion, setSelectedRegion] = useState('All');
 
   const handleBurger = () => {
     setBurger(!burger);
@@ -35,16 +35,16 @@ const Header = ({ onRegionChange }) => {
 
   return (
     <header className="min-h-[10px] z-50 bg-[#FFFFFF] sticky top-0 py-2 lg:py-4">
-      <div className="container mx-auto px-4 lg:px-8"> 
+      <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="pl-2 lg:pl-4">
+          <div className="pl-5 lg:pl-4">
             <h1 className="text-2xl font-bold text-slate-500">Countries</h1>
           </div>
           <div className="lg:hidden">
             {burger ? (
-              <XIcon onClick={handleBurger} className="h-10 text-gray-800 cursor-pointer" />
+              <XIcon onClick={handleBurger} className="h-10 text-gray-800 cursor-pointer pr-5 lg:pr-0" />
             ) : (
-              <MenuAlt1Icon onClick={handleBurger} className="h-10 cursor-pointer" />
+              <MenuAlt1Icon onClick={handleBurger} className="h-10 cursor-pointer pr-5 lg:pr-0" />
             )}
           </div>
           <div className="hidden lg:inline-flex flex-1 justify-end">
