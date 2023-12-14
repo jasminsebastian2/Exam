@@ -27,7 +27,7 @@ const Home = () => {
     <>
       <Header onRegionChange={handleRegionChange} />
 
-      <Container className="p-6 sm:space-x-10 lg:space-x-0 sm:flex-row lg:flex-row sm:space-y-0 lg:space-x-60 flex-wrap lg:p-10 justify-between">
+      <Container className="p-5 sm:space-x-10 lg:space-x-0 sm:flex-row lg:flex-row sm:space-y-0 lg:space-x-60 flex-wrap lg:p-10 justify-between">
         <Row className="w-85">
           {filteredCountries &&
             filteredCountries.map((ele) => (
